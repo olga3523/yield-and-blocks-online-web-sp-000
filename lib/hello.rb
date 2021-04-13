@@ -13,4 +13,8 @@
   end
 
 # hello_tcall your method here!
-hello_t
+hello_t(["Tim", "Tom", "Jim"]) do |name| #parameter for array[i] from yield
+   if name.start_with?("T")
+      puts "Hi, #{name}"
+   end
+end
